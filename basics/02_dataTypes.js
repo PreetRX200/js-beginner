@@ -8,6 +8,7 @@ let isLoggedIn = false
 let state = null
 
 /* Data Types
+Primitive--------
  number => 2 to power 53
  bigint
  string => ""
@@ -15,5 +16,13 @@ let state = null
  null => standalone value
  undefined => 
  symbol => unique
- object
- 
+ Reference(Non-primitive)------
+ objects
+ Arrays
+ Functions
+ */
+const id = Symbol('123');
+const anotherId = Symbol('123');
+
+console.log(id === anotherId);
+// learn type of operator from ecma script 
